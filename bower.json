@@ -1,0 +1,24 @@
+{
+  "name": "angular-modal-dialog",
+  "description": "Modal dialog example for angular",
+  "main": "index.html",
+  "authors": [
+    "Dzmitry Kharevich"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zeremit/angular-modal-dialog",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.14.3",
+    "ng-dialog": "~0.5.5",
+    "angular": "~1.4.7"
+  }
+}
