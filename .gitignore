@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 angular-modal-dialog.iml
+npm-debug.log
 node_modules
 bower_components
