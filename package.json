@@ -18,7 +18,7 @@
   "homepage": "https://github.com/zeremit/angular-modal-dialog#readme",
   "dependencies": {
     "bower": "^1.6.5",
-    "fs": "0.0.2",
-    "http": "0.0.0"
+    "express": "^4.13.3",
+    "serve-static": "^1.10.0"
   }
 }
