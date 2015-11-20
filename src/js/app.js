@@ -1,4 +1,4 @@
-var modalApp = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'staticLoader']);
+var modalApp = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'spinner', 'staticLoader']);
 
 modalApp.config(['$stateProvider', '$urlRouterProvider',
 
@@ -11,8 +11,8 @@ modalApp.config(['$stateProvider', '$urlRouterProvider',
                 'abstract': true
 
             }).
-            state('/', {
-                url:"/",
+            state('/modal', {
+                url:"/modal",
                 templateUrl : 'partial/modal.html'
                 //controller : 'LoginCtrl'
             }).
@@ -20,6 +20,11 @@ modalApp.config(['$stateProvider', '$urlRouterProvider',
                 url:"/select",
                 templateUrl : 'partial/select.html',
                 controller : 'SelectCtrl'
+            }).
+            state('/spinner', {
+                url:"/spinner",
+                templateUrl : 'partial/spinner.html',
+                controller : 'SpinnerCtrl'
             })
         ;
 

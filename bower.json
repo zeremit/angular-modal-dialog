@@ -20,6 +20,7 @@
     "angular-bootstrap": "~0.14.3",
     "ng-dialog": "~0.5.5",
     "angular": "~1.4.7",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "angular-spinner": "~0.8.0"
   }
 }
