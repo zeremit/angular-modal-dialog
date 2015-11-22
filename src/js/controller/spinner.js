@@ -1,3 +1,3 @@
-modalApp.controller('SpinnerCtrl',['$scope', function($scope){
+angular.module('spinner', []).controller('SpinnerCtrl',['$scope', function($scope){
 
 }]);

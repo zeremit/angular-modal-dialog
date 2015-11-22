@@ -1,4 +1,4 @@
-var modalApp = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'spinner', 'staticLoader']);
+var modalApp = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'spinner', 'angularSpinner', 'staticLoader']);
 
 modalApp.config(['$stateProvider', '$urlRouterProvider',
 
