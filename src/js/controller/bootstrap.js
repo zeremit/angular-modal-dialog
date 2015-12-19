@@ -1,4 +1,4 @@
-modalApp.controller('ModalDemoCtrl', function ($scope, $uibModal, $log) {
+app.controller('ModalDemoCtrl',['$scope', 'ngDialog', '$uibModal', '$log',  function ($scope, ngDialog, $uibModal, $log) {
 
     $scope.items = ['item1', 'item2', 'item3'];
 
@@ -25,16 +25,26 @@ modalApp.controller('ModalDemoCtrl', function ($scope, $uibModal, $log) {
         });
     };
 
+    $scope.ngDialogOpen = function (size) {
+
+        ngDialog.open({
+            template: 'firstDialogId',
+            //controller: 'InsideCtrl',
+            className: 'ngdialog-theme-plain',
+            closeByDocument: false
+        });
+    };
+
     $scope.toggleAnimation = function () {
         $scope.animationsEnabled = !$scope.animationsEnabled;
     };
 
-});
+}]);
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $uibModal service used above.
 
-modalApp.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
+app.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
 
     $scope.items = items;
     $scope.selected = {
