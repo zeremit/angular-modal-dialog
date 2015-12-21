@@ -1,3 +1,3 @@
-angular.module('spinner', []).controller('SpinnerCtrl',['$scope', function($scope){
+app.controller('SpinnerCtrl',['$scope', function($scope){
 
 }]);
