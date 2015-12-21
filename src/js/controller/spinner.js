@@ -1,4 +1,4 @@
-app.controller('SpinnerCtrl',['$scope', function($scope){
+angular.module('sampleApp').controller('SpinnerCtrl',['$scope', function($scope){
 
     $scope.runSpinner = function(){
         $scope.showSpinner = true;

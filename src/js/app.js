@@ -1,4 +1,4 @@
-var app = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'angularSpinner', 'staticLoader', 'door3.css', 'ngDialog']).config(['$stateProvider', '$urlRouterProvider',
+angular.module('sampleApp', ['ui.bootstrap', 'ui.router', 'angularSpinner', 'staticLoader', 'door3.css', 'ngDialog']).config(['$stateProvider', '$urlRouterProvider',
 
     function($stateProvider, $urlRouterProvider) {
 
