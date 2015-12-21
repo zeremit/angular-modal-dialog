@@ -2,7 +2,7 @@ var app = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'angularSpinn
 
     function($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise("/home");
+        $urlRouterProvider.otherwise("/");
 
         $stateProvider.
             state('site', {
@@ -37,7 +37,7 @@ var app = angular.module('modalApp', ['ui.bootstrap', 'ui.router', 'angularSpinn
                 controller : 'SpinnerCtrl'
             }).
             state('home', {
-                url:"/home",
+                url:"/",
                 templateUrl : 'partial/home.html'
             })
         ;
