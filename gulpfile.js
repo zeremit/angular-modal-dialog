@@ -116,12 +116,8 @@ gulp.task('default', ['build-libs', 'build-app'], function () {
 });
 
 gulp.task('watch', ['concat-libs', 'concat-app'], function() {
-    gulp.watch('src/js/**', function () {
-        gulp.run('concat-app');
-    });
-    gulp.watch('bower_components/**', function () {
-        gulp.run('concat-libs');
-    });
+    gulp.watch('src/js/**', ['concat-app']);
+    gulp.watch('bower_components/**', ['concat-libs']);
 });
 
 gulp.task('compass', function() {
