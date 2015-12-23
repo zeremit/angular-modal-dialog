@@ -29,8 +29,7 @@ angular.module('sampleApp', ['ui.bootstrap', 'ui.router', 'angularSpinner', 'sta
             state('select', {
                 url:"/select",
                 templateUrl : 'partial/select.html',
-                controller : 'SelectCtrl',
-                css: 'css/main.css'
+                controller : 'SelectCtrl'
             }).
             state('spinner', {
                 url:"/spinner",
